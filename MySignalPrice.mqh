@@ -1,4 +1,4 @@
-//+------------------------------------------------------------------+
+//+------------------------------------------------------------------+59-80
 //|                                                MySignalPrice.mqh |
 //|                                  Copyright 2024, MetaQuotes Ltd. |
 //|                                             https://www.mql5.com |
@@ -56,6 +56,28 @@ MySignalPrice::~MySignalPrice(void) {};
 //+------------------------------------------------------------------+
 //|                                                                  |
 //+------------------------------------------------------------------+
+//In bar 0 extremum=ihighest(,,d+b,start+b)
+//Check if xtremum ==ihighest(,,d+b,extremum)
+//if i high0 to high[d] ->brup True start=d-i
+//if i close0 to close[d] brup False start = 0
+//return brup for bs false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void MySignalPrice::findExt(int pos,int barsfrom) ////add finding minimum
   {
    int ind;
